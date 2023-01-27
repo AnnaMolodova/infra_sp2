@@ -68,7 +68,7 @@ DATABASES = {
         ),
         'NAME': os.getenv(
             'DB_NAME',
-            default= 'postgres'
+            default='postgres'
         ),
         'USER': os.getenv(
             'POSTGRES_USER',
@@ -123,7 +123,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-#STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/'),)
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/'),)
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
